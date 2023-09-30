@@ -3,9 +3,9 @@
 
 def primes(number_of_primes):
     if number_of_primes <= 0:
-        return ValueError(f'Error: Input value: {number_of_primes} is less than 1.')
+        raise ValueError(f'Error: Input value: {number_of_primes} is less than 1.')
     elif number_of_primes % int(number_of_primes) != 0:
-        return ValueError(f'Error: Input value: {number_of_primes} is not an integer')
+        raise ValueError(f'Error: Input value: {number_of_primes} is not an integer')
     else:
         primeList = [2]
         next = 3
